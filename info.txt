@@ -45,7 +45,7 @@ Front-End Web Developer (Self-Taught)
 Jan 2024 – Present
 Built multiple responsive web applications using HTML, CSS, JavaScript, and React. Focused on UI/UX, performance optimization, and clean code practices.
 
-Personal Portfolio Website
+Personal Portfolio Websites
 Designed and developed a personal portfolio to showcase technical projects, implementing responsive layouts, SEO best practices, and animations using pure CSS and JavaScript.
 
 Responsive E-commerce Landing Page Clone
