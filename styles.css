@@ -226,3 +226,83 @@ section.active{
     object-fit: cover;
     mix-blend-mode: lighten;
 }
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading span{
+    color: var(--main-color);
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem,1fr));
+    gap: 2rem;
+}
+
+.services-container .services-box{
+    padding: 3rem 2.5rem;
+    background: var(--second-bg-color);
+    border: .2rem solid var(--second-bg-color);
+    border-radius: 1rem;
+    transition: .5s;
+    &:hover{
+        border-color: var(--main-color);
+        scale: 1.02;
+    }
+}
+
+.services-container .services-box .icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+.services-box:hover .icon:not(a i) {
+    color: var(--main-color);
+}
+
+.services-container .services-box .icon i{
+    font-size: 4.5rem;
+}
+
+.services-container .services-box .icon a{
+    display: inline-flex;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    padding: 1rem;
+    transition: .5s;
+}
+
+.services-box:hover .icon a{
+   background: var(--main-color);
+}
+
+.services-container .services-box .icon a i {
+    font-size: 3rem;
+    color: var(--bg-color);
+    transform: rotate(225deg);
+    transition: .5s;
+}
+
+ .services-box .icon a:hover i {
+    transform: rotate(180deg);
+}
+
+.services-container .services-box h3 {
+    font-size: 2.5rem;
+    margin: .5rem 0 2rem;
+    transition: .5s;
+}
+
+.services-box:hover h3 {
+    color: var(--main-color);
+}
+
+.services-container .services-box p {
+    font-size: 1.5rem;
+}

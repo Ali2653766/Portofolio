@@ -1,0 +1,61 @@
+. Responsive Website Development
+I build modern and fully responsive websites using HTML, CSS, and JavaScript to ensure a seamless experience across all devices and screen sizes.
+
+
+. Performance Optimization
+I optimize website speed and performance, ensuring high scores on tools like Google PageSpeed Insights by improving structure, minimizing code, and enhancing load time.
+
+Figma to Code Conversion
+I convert clean and professional UI designs from Figma or Adobe XD into functional and pixel-perfect front-end code using HTML/CSS or React.js.
+
+4. Landing Page Design & Development
+I design and develop high-converting landing pages that are visually appealing, fast-loading, and SEO-friendly — ideal for marketing and product launches.
+
+UI/UX Improvement & Redesign
+I redesign outdated or ineffective user interfaces to improve user experience, accessibility, and engagement, focusing on clean layout and intuitive interaction.
+
+6. Interactive Front-End Features with JS/React
+I implement interactive components such as sliders, modals, tabs, forms, and dynamic UI behaviors using JavaScript or React.js to enhance user engagement.
+
+
+
+
+
+
+
+
+
+
+Education (لو مش معاك شهادة جامعية حاليًا)
+ممكن تكتبها كده:
+
+Self-Learning Path in Front-End Development
+2023 – Present
+Learning through Harvard’s CS50 Web Programming, freeCodeCamp, and hands-on projects focused on JavaScript, React, UI/UX, and responsive design.
+
+High School Student – 12th Grade (Expected graduation 2025)
+Currently balancing academic studies with a focused pursuit of front-end web development.
+
+
+
+
+الذاتي كالتالي:
+
+Front-End Web Developer (Self-Taught)
+Jan 2024 – Present
+Built multiple responsive web applications using HTML, CSS, JavaScript, and React. Focused on UI/UX, performance optimization, and clean code practices.
+
+Personal Portfolio Website
+Designed and developed a personal portfolio to showcase technical projects, implementing responsive layouts, SEO best practices, and animations using pure CSS and JavaScript.
+
+Responsive E-commerce Landing Page Clone
+Recreated a commercial landing page for Adidas as a single-page responsive design to demonstrate layout skills, branding precision, and mobile-first techniques.
+
+Open Source Contributions
+Contributed to frontend UI components on GitHub. Focused on accessibility and code readability.
+
+Freelance Practice (Unofficial)
+Developed practice websites for family/friends to simulate real client work, including requirements gathering, mockups, and iteration.
+
+CS50 Web Projects (Harvard edX)
+Completed structured assignments including Flask-based applications, front-end interactivity, and database integration.
