@@ -146,7 +146,7 @@ section.active{
     background-color: var(--main-color);
     box-shadow: 0 0 1rem var(--main-color);
     font-weight: 500;
-    transition: .5s;
+    transition: 1s;
     &:hover{
         background-color: var(--bg-color);
         color: var(--white-color);
@@ -296,7 +296,7 @@ section.active{
 .services-container .services-box h3 {
     font-size: 2.5rem;
     margin: .5rem 0 2rem;
-    transition: .5s;
+    transition: 1s;
 }
 
 .services-box:hover h3 {
@@ -346,7 +346,7 @@ section.active{
 
 .resume-details{
     display: none;
-    transition: .5s;
+    transition: 1s;
 
 }
 
@@ -415,3 +415,211 @@ section.active{
     background:var(--main-color);
 }
 
+.resume-details.skills .resume-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    gap: 2rem;
+    height: auto;
+    overflow: visible;
+}
+
+.resume-details.skills .resume-item{
+    position: relative;
+    align-items: center;
+    height: auto;
+}
+
+.resume-details.skills .resume-item i{
+    font-size: 8.5rem;
+    transition: .5s;
+}
+
+.resume-details.skills .resume-item i:hover{
+    color: var(--main-color);
+    transform: scale(1.2);
+}
+.resume-details.skills .resume-item span{
+    position: absolute;
+    font-size: 1.6rem;
+    top: -20%;
+    background: var(--white-color);
+    color: var(--bg-color);
+    padding: .5rem 1rem;
+    border-radius: .6rem;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.9);
+    transition: .5s;
+}
+
+.resume-details.skills .resume-item:hover span{
+    top: -25%;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.resume-details.about .resume-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 2rem;
+    height: auto;
+    overflow: visible;
+    padding: 0 0 .5rem;
+}
+
+.resume-details.about .resume-list .resume-item{
+    background: transparent;
+    padding: 0 0 .5rem;
+    height: auto;
+
+}
+
+.resume-details.about .resume-list .resume-item p{
+    color: var(--main-color);
+}
+
+.resume-details.about .resume-list .resume-item p span{
+    color: var(--white-color);
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+.portofolio-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem,1fr));
+    gap: 2rem;
+}
+
+.portofolio-details{
+    display: none;
+    transition: 1s;
+}
+.portofolio-details.active{
+    display: block;
+}
+
+.portofolio-box .numb{
+    font-size: 8rem;
+    color: transparent;
+    -webkit-text-stroke: .07rem var(--white-color);
+    line-height: 1;
+}
+
+.portofolio-box h3{
+    font-size: 3.5rem;
+    margin: .8rem 0 2rem;
+}
+
+.portofolio-box p{
+    font-size: 1.6rem;
+}
+
+.portofolio-box .tech{
+    margin:2rem 0;
+    color: var(--main-color);
+    padding-bottom: 2rem;
+    border-bottom: .1rem solid var(--white-color);
+}
+
+.live-github a{
+    display: inline-flex;
+    color: var(--white-color);
+    padding: 1.3rem;
+    font-size: 3rem;
+    position: relative;
+    background: var(--second-bg-color);
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.live-github a:hover{
+    color: var(--main-color);
+}
+
+.live-github a:first-child{
+    margin-right: 1.5rem;
+}
+
+.live-github a:first-child i{
+    transform: rotate(135deg);
+}
+
+.live-github a span{
+    position: absolute;
+    top: -60%;
+    left: 50%;
+    transform: translateX(-50%) scale(.9);
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding: .5rem 1rem;
+    pointer-events: none;
+    background: var(--white-color);
+    color: var(--bg-color);
+    opacity: 0;
+    scale: .9;
+    border-radius: 1rem;
+    transition: .2s;
+}
+
+.live-github a:hover span{
+    top: -70%;
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.portofolio-carousel{
+    width: 100%;
+    height: 45rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.portofolio-carousel .img-slide{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 2rem;
+    height: inherit;
+    transition: .5s;
+}
+
+.portofolio-carousel .img-item{
+   height: inherit;
+}
+
+.portofolio-carousel .img-item img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.portofolio-box .navigation{
+    text-align: right;
+    margin-top:2rem ;
+}
+
+.portofolio-box .navigation button{
+    display: inline-flex;
+    padding: 0.4rem;
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.portofolio-box .navigation button.disabled{
+    background: var(--second-bg-color);
+    color: var(--disabled-color);
+}
+
+.portofolio-box .navigation .right-arrow{
+    margin-left: 1.5rem ;
+}
+
+.portofolio-box .navigation .left-arrow{
+    margin-right: 1.5rem ;
+}

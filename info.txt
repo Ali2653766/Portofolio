@@ -59,3 +59,23 @@ Developed practice websites for family/friends to simulate real client work, inc
 
 CS50 Web Projects (Harvard edX)
 Completed structured assignments including Flask-based applications, front-end interactivity, and database integration.
+
+
+
+
+
+
+
+
+
+
+Adidas Product Landing Page
+Tech used: HTML, CSS – Responsive Glassmorphism Design
+GitHub: [Link] | Live Demo: [Link]
+
+2. TechnoNews Scroll Website
+Tech used: HTML, CSS, JavaScript
+Includes scroll animations and full responsiveness.
+
+3. Survey Form (FCC Final Project)
+Fully accessible form with validations, built with clean semantic HTML/CSS.
