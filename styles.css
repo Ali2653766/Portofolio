@@ -811,6 +811,11 @@ section.active{
     .field-box{
         grid-template-columns: 1fr;
     }
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -840,11 +845,7 @@ section.active{
         margin: 4rem 0;
     }
 
-    .home{
-        flex-direction: column-reverse;
-        justify-content: center;
-        gap: 2rem;
-    }
+    
 
     .home-img .img-box .img-item img{
     position: absolute;
