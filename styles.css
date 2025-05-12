@@ -841,15 +841,19 @@ section.active{
     }
 
     .home{
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         gap: 2rem;
     }
 
-    .home-img .img-box{
-        height: 35rem;
-        width: 35rem;
-
+    .home-img .img-box .img-item img{
+    position: absolute;
+    /* Change top value from 3rem to 0 */
+    top: 0;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+    mix-blend-mode: lighten;
     }
 
     .resume-container,
@@ -867,7 +871,7 @@ section.active{
     }
 
     .contact-box .field-box{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
