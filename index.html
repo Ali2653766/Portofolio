@@ -8,7 +8,7 @@
     <title>Ali Mahmmoud - Front End Developer</title>
 </head>
 <body>
-    <header>
+    <header class="active">
         <a href="#"class='logo'>Ali Mahmmoud</a>
 
         <i class="bx bx-menu" id="menu-icon"></i>
@@ -22,8 +22,18 @@
         </nav>
     </header>
 
+
+    <div class="bars-box active">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
     <!--Home section-->
-    <section class="home ">
+    <section class="home active ">
         <div class="home-details">
             <h1>Ali Mahmmoud</h1>
             <h2>I'm a
@@ -274,7 +284,7 @@
     </section>
 
     <!--Portofolio Section-->
-    <section class="portofolio active">
+    <section class="portofolio ">
         <h2 class="heading">Latest <span>Project</span></h2> 
         <div class="portofolio-container">
             <div class="portofolio-box">
@@ -343,6 +353,45 @@
             </div>
                 
             
+        </div>
+    </section>
+
+    <section class="contact ">
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>Let's Work Together</h2>
+                <p class="desc">Whether you have a project in mind, Want to collaborate, or just want to chat about design and development, I'd love to hear from you. Feel free to reach out -- I'm always open to new ideas and opportunities</p>
+                <div class="contact-detail">
+                    <i class='bx  bx-phone'  ></i> 
+                    <div class="detail">
+                        <p>Phone</p>
+                        <p>+20 1551373482</p>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <i class='bx  bx-envelope-open'  ></i> 
+                    <div class="detail">
+                        <p>Email</p>
+                        <p>123aliactionx5@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <form action="">
+                    <h2 class="heading">Contact <span>Me</span></h2>
+                    <div class="field-box">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="text" placeholder="Email Adress" required>
+                        <input type="text" placeholder="Phone Number" required>
+                        <input type="text" placeholder="Email Subject" required>
+                        <textarea placeholder="Your Message" required ></textarea>
+
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
     <script src="script.js"></script>

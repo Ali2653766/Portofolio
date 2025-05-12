@@ -8,6 +8,7 @@
     border: none;
     text-decoration: none;
     outline: none;
+    
 }
 
 :root {
@@ -24,6 +25,7 @@ html{
 
 body{
     color: var(--white-color);
+    
 }
 header{
     position: fixed;
@@ -36,7 +38,23 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    visibility: hidden;
+    opacity: 0;
 }
+
+header.active{
+    animation: show-header 1.5s linear forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes show-header{
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
 .logo{
     font-size: 3rem;
     color: var(--white-color);
@@ -58,21 +76,67 @@ nav a:hover,nav .active{
     display: none;
 }
 
+.bars-box{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.bars-box .bar{
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: hide-bars .5s ease-in-out both;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes hide-bars{
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+} 
+
+.bars-box.active .bar{
+    animation: show-bars .5s ease-in-out both;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes show-bars{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+} 
+    
+
+
 section{
     position: absolute;
     width: 100%;
     height: 100%;
     padding: 10rem 9% 2rem;
-    background-color: var(--bg-color);
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
 }
 
 section.active{
-    visibility: visible;
-    opacity: 1;
+    animation: show-section 1.5s linear forwards;
+    animation-delay: 1.2s;
     overflow: auto;
+}
+
+@keyframes show-section{
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .home {
@@ -147,11 +211,12 @@ section.active{
     box-shadow: 0 0 1rem var(--main-color);
     font-weight: 500;
     transition: 1s;
-    &:hover{
-        background-color: var(--bg-color);
-        color: var(--white-color);
-        box-shadow: none;
-    }
+}
+
+.btn:hover{
+    background: var(--bg-color);
+    color: var(--white-color);
+    box-shadow: none;
 }
 
 .sci{
@@ -622,4 +687,225 @@ section.active{
 
 .portofolio-box .navigation .left-arrow{
     margin-right: 1.5rem ;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 3rem;
+}
+
+.contact-me{
+    align-self: center;
+}
+
+.contact-box h2{
+    font-size: 4.5rem;
+}
+
+.contact-box p{
+    font-size: 1.6rem;
+}
+
+.contact-box .desc{
+    margin: 1.5rem 0 2.5rem;
+}
+
+.contact-box:first-child{
+    align-self: center;
+}
+
+.contact-box h2{
+    font-size: 4.5rem;
+}
+
+.contact-box p{
+    font-size: 1.6rem;
+}
+
+.contact-box .desc{
+    margin: 1.5rem 0 2.5rem
+}
+
+.contact-detail{
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.contact-detail i{
+    font-size: 3rem;
+    color: var(--main-color);
+    background-color: var(--second-bg-color);
+    padding: 1.6rem;
+    margin-right: 1.5rem;
+    border-radius: .6rem;
+}
+
+.contact-detail .detail p:first-child{
+    color: var(--main-color);
+}
+
+.contact-box form{
+    background-color: var(--second-bg-color);
+    padding: 2.5rem 3.5rem 3.5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.contact-box .heading{
+    font-size: 3.5rem;
+}
+
+.contact-box .field-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+.contact-box .field-box input, 
+.contact-box .field-box textarea{
+    background-color: var(--bg-color);
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    border-radius: .6rem;
+    border: .2rem solid var(--second-bg-color);
+    transition: .5s;
+    color: var(--white-color);
+    &:focus{
+        border-color: var(--main-color);
+    }
+}
+.contact-box .field-box textarea{
+    grid-column: 1 / -1;
+    height: 24rem;
+    resize: none;
+}
+
+.contact-box .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    header{
+        padding: 2rem 4%;
+    }
+
+    section{
+        padding: 10rem 4% 2rem;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .field-box{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #menu-icon{
+        display: block;
+        color: var(--white-color);
+    }
+
+    nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        background-color: var(--bg-color);
+        border-top: .2rem solid rgba(0, 0 ,0 , .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0 ,0 , .2);
+        text-align: center;
+        display: none;
+    }
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        margin: 4rem 0;
+    }
+
+    .home{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .home-img .img-box{
+        height: 35rem;
+        width: 35rem;
+
+    }
+
+    .resume-container,
+    .contact-container,
+    .portofolio-container{
+        grid-template-columns: 1fr;
+    }
+
+    .resume-container{
+        gap: 3rem;
+    }
+
+    .portofolio-box:first-child{
+        order: 1;
+    }
+
+    .contact-box .field-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .home-img .img-box{
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .field-box{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .home-details,
+    .resume-box h2,
+    .resume-box desc,
+    .resume-box .heading,
+    .resume-details.about .resume-item{
+        text-align: center;
+    }
+
+    .home-details .btn{
+        flex-direction: column-reverse;
+    }
+
+    .contact-box form{
+        padding: 2.5rem 2rem 3.5rem;
+    }
+
+    .contact-box h2{
+        font-size: 3.5rem;
+    }
 }
