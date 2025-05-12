@@ -811,17 +811,19 @@ section.active{
     .field-box{
         grid-template-columns: 1fr;
     }
-    .home{
-        flex-direction: column-reverse;
-        justify-content: center;
-        gap: 2rem;
-    }
+    
 }
 
 @media screen and (max-width:768px) {
     #menu-icon{
         display: block;
         color: var(--white-color);
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
     }
 
     nav{
@@ -882,7 +884,7 @@ section.active{
         width: 30rem;
     }
 
-    .field-box{
+    .contact-box .field-box{
         grid-template-columns: 1fr;
     }
 }
