@@ -98,12 +98,13 @@ const activePortfolio = () => {
 };
 
 arrowright.addEventListener('click', () => {
-    if (index < 2) {
+    const imgs = document.querySelectorAll('.img-item');
+    if (index < imgs.length - 3) {
         index++;
         arrowleft.classList.remove('disabled');
     }
     else {
-        index = 3;
+        index = imgs.length - 2;
         arrowright.classList.add('disabled');
     }
     activePortfolio();
