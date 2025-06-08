@@ -494,15 +494,15 @@ section.active{
     height: auto;
 }
 
-.resume-details.skills .resume-item i{
+.resume-details.skills .resume-item i,svg{
     font-size: 8.5rem;
     transition: .5s;
-}
-
-.resume-details.skills .resume-item i:hover{
+    &:hover{
     color: var(--main-color);
     transform: scale(1.2);
+    }
 }
+
 .resume-details.skills .resume-item span{
     position: absolute;
     font-size: 1.6rem;
