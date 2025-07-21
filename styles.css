@@ -538,7 +538,10 @@ section.active{
     height: auto;
 
 }
-
+.svg{
+    width: 100px;
+    height: 100px;
+}
 .resume-details.about .resume-list .resume-item p{
     color: var(--main-color);
 }
